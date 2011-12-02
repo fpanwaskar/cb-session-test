@@ -10,6 +10,10 @@
 //    grails.config.locations << "file:" + System.properties["${appName}.config.location"]
 // }
 
+cloudbees.api.url = 'https://api.cloudbees.com/api'
+cloudbees.api.key = 'E298E6D0578DB124'
+cloudbees.api.secret = 'KPXBLKDTUJ40I9PRZNZWD4DG1I6FFA2ZPVV75ELMXJS='
+
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
 grails.mime.file.extensions = true // enables the parsing of file extensions from URLs into the request format
 grails.mime.use.accept.header = false
