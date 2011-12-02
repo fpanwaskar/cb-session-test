@@ -16,4 +16,9 @@ class SessionController {
 		sessionStorage.storeMessage(params.id, params.message)
 		render(view:'show', model:[httpSessionStorage: sessionStorage])
 	}
+	
+	def updateMaxInterval = {
+		session.setMaxInactiveInterval(params.int('maxInactiveInterval'))
+		render(view:'show', model:[httpSessionStorage: new HttpSessionStorage(request)])
+	}
 }

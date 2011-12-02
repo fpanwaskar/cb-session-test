@@ -21,5 +21,12 @@
 	</br>
 	
 	<p>Current session holds messages: ${httpSessionStorage?.getAllMessages()}</p>
+	</br>
+	
+	<p>Override session max inactive interval for the current session</p>
+	<g:form name="sessionForm" controller="session" action="updateMaxInterval">
+		<g:textField name="maxInactiveInterval" value="" /></br>
+		<g:submitButton name="Submit" value="Submit" />
+	</g:form>
 </body>
 </html>
